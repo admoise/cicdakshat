@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Build Maven'){
             steps{
-                git url:'https://github.com/admoise/cicdakshat', branch: "master"
+                git url:'https://github.com/admoise/cicdakshat/', branch: "master"
                sh 'mvn clean install'
             }
         }
